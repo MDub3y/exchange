@@ -1,0 +1,22 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "yarn build && node dist/index.js",
+    "seed:db": "yarn build && node dist/seed-db.js",
+    "refresh:views": "yarn build && node dist/cron.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@types/pg": "^8.11.11",
+    "pg": "^8.14.1",
+    "redis": "^4.7.0"
+  }
+}

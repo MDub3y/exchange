@@ -1,0 +1,27 @@
+{
+  "name": "engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "cross-env WITH_SNAPSHOT=true node dist/index.js",
+    "dev": "yarn build && cross-env WITH_SNAPSHOT=true yarn start",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@types/express": "^5.0.1",
+    "@types/redis": "^4.0.11",
+    "express": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "redis": "^4.7.0",
+    "vitest": "^3.1.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

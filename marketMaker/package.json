@@ -1,0 +1,14 @@
+{
+  "name": "market-maker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "yarn build && yarn start"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.8.4"
+  }
+}
