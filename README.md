@@ -1,10 +1,13 @@
-💹 High-Performance Real-Time Trading Engine
+High-Performance Real-Time Trading Engine
 ============================================
 
 A modular, low-latency trading platform featuring an in-memory order matching engine, real-time WebSocket streaming, and a distributed microservices architecture. Designed for sub-millisecond execution and high-throughput market data visualization.
 
-🏗️ System Architecture
+System Architecture
 -----------------------
+
+![Screenshot_2024-06-29_at_3 52 33_PM](https://github.com/user-attachments/assets/3d97bff4-f139-4c3c-8402-fde801147b70)
+
 
 The system is built as a suite of decoupled services communicating through **Redis** (Queues & Pub/Sub) to ensure high availability and scalability.
 
@@ -21,7 +24,7 @@ The system is built as a suite of decoupled services communicating through **Red
 *   **Frontend:** A modern React/Next.js dashboard for real-time visualization of candles, depth, and trades.
     
 
-⚡ Key Features & Engineering Decisions
+Key Features & Engineering Decisions
 --------------------------------------
 
 ### In-Memory Orderbook & Balances
@@ -46,7 +49,7 @@ The system supports granular WebSocket streams for professional-grade trading in
 *   **Ticker:** 24h rolling price statistics and graph data.
     
 
-🛠️ Tech Stack
+Tech Stack
 --------------
 
 *   **Language:** TypeScript
@@ -62,7 +65,7 @@ The system supports granular WebSocket streams for professional-grade trading in
 *   **Communication:** REST API, WebSockets
     
 
-🚀 API Documentation
+API Documentation
 --------------------
 ### Authentication
 
@@ -85,7 +88,7 @@ The system supports granular WebSocket streams for professional-grade trading in
 | /api/v1/order/quote | POST | {kind, quantity, market} | Get a price quote for a market order |
 
 
-🔌 WebSocket API
+WebSocket API
 ----------------
 
 Connect to the stream via ws://localhost:PORT.
@@ -99,7 +102,7 @@ Connect to the stream via ws://localhost:PORT.
 *   **Ticker Updates:** ticker@MARKET
     
 
-🚦 Getting Started
+Getting Started
 ------------------
 
 ### Prerequisites
@@ -144,7 +147,7 @@ Connect to the stream via ws://localhost:PORT.
         cd api && npm run dev
     
 
-🛡️ Reliability & Scalability
+Reliability & Scalability
 -----------------------------
 
 *   **Redis Queues:** Acts as a buffer between the API and the Engine. If the Engine restarts, it picks up pending orders from the queue.
